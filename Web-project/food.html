@@ -1,0 +1,208 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Food</title>
+    <link rel="stylesheet" href="Fstyle.css">
+<!--    <link rel="script" href="main.js">-->
+<!--    box icons-->
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="AdmineStyle1.css">
+<!--    <link rel="stylesheet" href="profile.css">-->
+
+    <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+    <script src="jquery.lettering.js"></script>
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Boxicons CDN Link -->
+</head>
+<body>
+
+<form method="post">
+    <div class="sidebar">
+        <div class="logo-details">
+            <div class="logo_name">User's List</div>
+            <i class='bx bx-menu' id="btn" ></i>
+        </div>
+        <ul class="nav-list">
+
+
+            <!--   <li>
+                   <i class='bx bx-search' ></i>
+                   <input type="text" placeholder="Search...">
+                   <span class="tooltip">Search</span>
+               </li>  -->
+            <li>
+                <a href="UserProfile.php">
+                    <i class='bx bx-user' ></i>
+                    <span class="links_name">Profile</span>
+                </a>
+                <span class="tooltip">Profile</span>
+            </li>
+            <li>
+                <a href="mov.html" class="active">
+                    <i class='fas fa-tape' ></i>
+                    <span class="links_name">Coming soon</span>
+                </a>
+                <span class="tooltip">Coming soon</span>
+            </li>
+            <li>
+                <a href="coomingsoon.php">
+                    <i class='fa fa-ticket' ></i>
+                    <span class="links_name">now playing</span>
+                </a>
+                <span class="tooltip">now playing</span>
+            </li>
+            <li>
+                <a href="food.html">
+                    <i class='fas fa-pizza-slice' ></i>
+                    <span class="links_name">food&drinks</span>
+                </a>
+                <span class="tooltip">food&drinks</span>
+            </li>
+
+            <li class="profile">
+                <div class="profile-details">
+                    <!--<img src="profile.jpg" alt="profileImg">-->
+                    <div class="name_job">
+                        <a target="_top"  href="index.php" >
+                            <i class='bx bx-log-out' ></i>
+                            <span class="links_name"></span>
+                        </a>
+                        <i class='bx bx-log-out' ></i>
+                        <span class="links_name"></span>
+                    </div>
+                </div>
+
+            </li>
+        </ul>
+    </div>
+
+</form>
+
+<div class="cart">
+     <img src="img/bag.png" id="cart-icon">
+</div>
+<header>
+    <div class="nav container">
+    </div>
+<div class="cartt">
+<h2 class="cart-title">Your Cart</h2>
+    <div class="cart-content">
+
+    </div>
+    <div class="total">
+        <div class="total-title">Total</div>
+        <div class="total-price">$0</div>
+    </div>
+
+    <button type="button" class="btn-buy"> Buy Now</button>
+
+    <i class='bx bx-x' id="close-cart"></i>
+</div>
+</header>
+<!--******-->
+<section class="shop container">
+    <h2 class="section-title">Our Food & Drinks</h2><br/>
+    <div class="shop-content">
+        <div class="product-box">
+            <img src="img/coffe.jpg" class="product-img">
+            <h2 class="product-title">Coffee</h2>
+            <span class="price"><p>$3</p></span><br/>
+            <i class='bx bx-shopping-bag add-cart' id="add--cart"></i>
+        </div>
+        <div class="product-box">
+            <img src="img/burger.jpg" class="product-img">
+            <h2 class="product-title">Burger</h2>
+            <span class="price"><p>$8</p></span><br/>
+            <i class='bx bx-shopping-bag add-cart'></i>
+        </div>
+        <div class="product-box">
+        <img src="img/ccokies.jpg" class="product-img">
+        <h2 class="product-title">Cookies</h2>
+        <span class="price"><p>$3</p></span><br/>
+        <i class='bx bx-shopping-bag add-cart'></i>
+    </div>
+        <div class="product-box">
+            <img src="img/chips.jpg" class="product-img">
+            <h2 class="product-title">Chips</h2>
+            <span class="price"><p>$3</p></span><br/>
+            <i class='bx bx-shopping-bag add-cart'></i>
+        </div>
+        <div class="product-box">
+            <img src="img/cola.jpg" class="product-img">
+            <h2 class="product-title">Cola</h2>
+            <span class="price"><p>$2</p></span><br/>
+            <i class='bx bx-shopping-bag add-cart'></i>
+        </div>
+        <div class="product-box">
+            <img src="img/fries.jpg" class="product-img">
+            <h2 class="product-title">Fries</h2>
+            <span class="price"><p>$1.5</p></span><br/>
+            <i class='bx bx-shopping-bag add-cart'></i>
+        </div>
+        <div class="product-box">
+            <img src="img/icecrem.jpg" class="product-img">
+            <h2 class="product-title">Icecrem</h2>
+            <span class="price"><p>$2</p></span><br/>
+            <i class='bx bx-shopping-bag add-cart'></i>
+        </div>
+        <div class="product-box">
+            <img src="img/popcorn.jpg" class="product-img">
+            <h2 class="product-title">Popcorn</h2>
+            <span class="price"><p>$4</p></span><br/>
+            <i class='bx bx-shopping-bag add-cart'></i>
+        </div>
+        <div class="product-box">
+            <img src="img/water.jpg" class="product-img">
+            <h2 class="product-title">Water</h2>
+            <span class="price"><p>$1</p></span><br/>
+            <i class='bx bx-shopping-bag add-cart'></i>
+        </div>
+        <div class="product-box">
+            <img src="img/n.jpg" class="product-img">
+            <h2 class="product-title">Macroos</h2>
+            <span class="price"><p>$3</p></span><br/>
+            <i class='bx bx-shopping-bag add-cart'></i>
+        </div>
+        <div class="product-box">
+            <img src="img/juice.jpg" class="product-img">
+            <h2 class="product-title">Juice</h2>
+            <span class="price"><p>$2</p></span><br/>
+            <i class='bx bx-shopping-bag add-cart'></i>
+        </div>
+
+
+    </div>
+</section>
+<script src="main.js"></script>
+<script>
+    let sidebar = document.querySelector(".sidebar");
+    let closeBtn = document.querySelector("#btn");
+    let searchBtn = document.querySelector(".bx-search");
+
+    closeBtn.addEventListener("click", ()=>{
+        sidebar.classList.toggle("open");
+        menuBtnChange();//calling the function(optional)
+    });
+
+    searchBtn.addEventListener("click", ()=>{ // Sidebar open when you click on the search iocn
+        sidebar.classList.toggle("open");
+        menuBtnChange(); //calling the function(optional)
+    });
+
+    // following are the code to change sidebar button(optional)
+    function menuBtnChange() {
+        if(sidebar.classList.contains("open")){
+            closeBtn.classList.replace("bx-menu", "bx-menu-alt-right");//replacing the iocns class
+        }else {
+            closeBtn.classList.replace("bx-menu-alt-right","bx-menu");//replacing the iocns class
+        }
+    }
+</script>
+
+</body>
+</html>
